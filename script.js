@@ -27,7 +27,7 @@ function converter(){
 
     } else if (selectedCurrency.value === 'dol') {
         valueConverted = inputValue.value / 5.37;
-        result.innerHTML = valueConverted('en-US', 'USD');
+        result.innerHTML = valueFormatter('en-US','USD');
     }
     inputValue.value = '';
     selectedCurrency.value = '';
